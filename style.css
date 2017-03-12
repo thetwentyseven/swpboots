@@ -33,14 +33,9 @@ h6, .h6 {
   color: #333;
 }
 
-ul {
-    margin: 0;
-    padding: 0.2em 0em;
-    list-style: none;
-}
-
-.sidebar-module li{
-  margin-bottom: 7px;
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: none;
 }
 
 
@@ -83,6 +78,11 @@ label {
   text-decoration: none;
 }
 
+ul#menu-main-menu {
+    margin: 0;
+    padding: 0;
+}
+
 /* Active state gets a caret at the bottom */
 .blog-nav .active {
   color: #fff;
@@ -101,6 +101,9 @@ label {
   border-left: 5px solid transparent;
 }
 
+.blog-nav ul li a{
+  color: white;
+}
 
 /*
  * Blog name and description
@@ -147,6 +150,15 @@ label {
   margin-bottom: 0;
 }
 
+.blog-sidebar ul {
+    margin: 0;
+    padding: 0.2em 0em;
+    list-style: none;
+}
+
+.sidebar-module li{
+  margin-bottom: 7px;
+}
 
 /* Pagination */
 .pager {

@@ -11,7 +11,11 @@
 	</a>
 	<p class="blog-post-meta"><?php the_date('F j, Y'); ?> by <a href="#"><?php the_author(); ?></a></p>
 	<?php
-	the_content();
+	if (is_single()) {
+		the_content();
+	} else {
+		the_excerpt();
+	}
 
 	wp_link_pages( array(
 		'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'swpboots' ) . '</span>',
